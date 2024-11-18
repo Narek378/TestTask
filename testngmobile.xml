@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Mobile Automation Suite" parallel="false">
+
+<!--    <test name="Mobile Tests - Local">-->
+<!--        <parameter name="platform" value="Android" />-->
+<!--        <parameter name="browser" value="chrome" />-->
+<!--        <parameter name="isCloud" value="false" />-->
+<!--        <classes>-->
+<!--            <class name="com.picsart.tests.PicsartMobileTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="Mobile Tests - Cloud">
+        <parameter name="platform" value="iOS" />
+        <parameter name="browser" value="safari" />
+        <parameter name="isCloud" value="true" />
+        <parameter name="deviceType" value="iPhone 14 Pro Max" />
+
+        <classes>
+            <class name="com.picsart.tests.PicsartMobileTest" />
+        </classes>
+    </test>
+</suite>
