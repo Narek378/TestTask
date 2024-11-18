@@ -49,7 +49,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                        <suiteXmlFile>testngweb.xml</suiteXmlFile>
                         <suiteXmlFile>testngmobile.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>

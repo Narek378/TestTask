@@ -32,8 +32,8 @@ public class DriverFactory {
 
             if (isCloud) {
                 // LambdaTest Capabilities
-                capabilities.setCapability("user", "");
-                capabilities.setCapability("accessKey", "");
+                capabilities.setCapability("user", System.getenv("USERNAME_LT"));
+                capabilities.setCapability("accessKey", System.getenv("KET_LT"));
                 capabilities.setCapability("browserName", browser);
                 capabilities.setCapability("platformName", platform);
                 capabilities.setCapability("realMobile", "false");
